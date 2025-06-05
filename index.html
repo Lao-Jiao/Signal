@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电路模拟器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="icon-sidebar">
+        <img src="PNG/开关触发器.png" draggable="true" class="sidebar-icon" data-icon="开关触发器">
+        <img src="PNG/与门（&）.png" draggable="true" class="sidebar-icon" data-icon="与门（&）">
+        <img src="PNG/或门（OR）.png" draggable="true" class="sidebar-icon" data-icon="或门（OR）">
+        <img src="PNG/非门（NOT）.png" draggable="true" class="sidebar-icon" data-icon="非门（NOT）">
+        <img src="PNG/分支（BR）.png" draggable="true" class="sidebar-icon" data-icon="分支（BR）">
+        <img src="PNG/延时触发器.png" draggable="true" class="sidebar-icon" data-icon="延时触发器">
+        <img src="PNG/XOR信号器.png" draggable="true" class="sidebar-icon" data-icon="XOR信号器">
+        <img src="PNG/标记储存装置.png" draggable="true" class="sidebar-icon" data-icon="标记储存装置">
+        <img src="PNG/灯.png" draggable="true" class="sidebar-icon" data-icon="灯">
+        <img src="PNG/跟随器.png" draggable="true" class="sidebar-icon" data-icon="跟随器">
+    </div>
+    <div class="grid-bg"></div>
+
+    <div class="toolbar-glass" style="visibility: hidden; height: 0; overflow: hidden;">
+        <div class="toolbar-btns">
+            <button id="add-node"><span>＋</span> 节点</button>
+            <button id="add-branch"><span>⎯⎯⎯</span> 分支</button>
+            <button id="clear">清空</button>
+            <label class="color-label">
+                <input type="color" id="node-color" value="#5e60ce">
+                <span>颜色</span>
+            </label>
+        </div>
+    </div>
+    <div class="grid-container" id="grid-container">
+        <svg class="connection-svg" id="connection-svg"></svg>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
